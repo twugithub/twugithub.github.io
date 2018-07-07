@@ -85,7 +85,7 @@
       </div>
 
       <!-- <div class="container"> -->
-      <span id="bio" name="bio"><h3> About Me </h3></span>
+      <span id="bio" name="bio"><h3> Bio </h3></span>
       <table class="table table-hover">
         <p>
 		I am a Machine Learning Engineer at <a href="https://www.factset.com/">Factset</a>. Before joining Factset, I completed my Ph.D. in Electrical and Computer Engineering from <a href="http://www.ece.rutgers.edu/">Rutgers University</a>, where I was fortunate to work with <a href="http://www.inspirelab.us/people/">Prof. Waheed Bajwa</a>. I obtained my M.S. degree in Electrical Engineering from <a href="http://ece.duke.edu/">Duke University</a> in 2011, and B.E. degree in Instrument Science and Engineering from <a href="http://www.ie.sjtu.edu.cn/">Shanghai Jiao Tong University</a> in 2009. In the past, I held internships at AT&T Research Lab, and conducted visiting research at Army Research Lab. My research interests include machine learning, geometrical methods for big data analytics, and computer vision.
@@ -121,13 +121,25 @@
         </tr>
       </table>
             
-      <span id="publication" name="publication"><h3> Publications </h3></span>
+      <span id="publication" name="publication"><h3> Conference and journal publications </h3></span>
       <table class="table table-hover">
+	    <tr>
+          <td>  
+            <strong> A low tensor-rank representation approach for clustering of imaging data </strong>
+            <br> <b>T. Wu</b> and W. U. Bajwa
+            <br> IEEE Signal Processing Letters, vol. 25, no. 8, pp. 1196-1200, Aug. 2018.
+            <br> [<a href="javascript:none" onclick="display('SPL-abs')">abs</a>] [<a href="https://ieeexplore.ieee.org/document/8392416/">published version</a>]
+            <div id="SPL-abs" style="display:none"><p>
+              This letter proposes an algorithm for clustering of two-dimensional data. Instead of "flattening" data into vectors, the proposed algorithm keeps samples as matrices and stores them as lateral slices in a third-order tensor. It is then assumed that the samples lie near a union of free submodules and their representations under this model are obtained by imposing a low tensor-rank constraint and a structural constraint on the representation tensor. Clustering is carried out using an affinity matrix calculated from the representation tensor. Effectiveness of the proposed algorithm and its superiority over existing methods are demonstrated through experiments on two image datasets. 
+            </p></div>
+          </td>
+        </tr>
+		
         <tr>
           <td>  
             <strong> Human action attribute learning from video data using low-rank representations </strong>
             <br> <b>T. Wu</b>, P. Gurram, R. M. Rao and W. U. Bajwa
-            <br>  arXiv preprint, Nov. 2016.
+            <br> arXiv preprint, Nov. 2016.
             <br> [<a href="javascript:none" onclick="display('arxiv-2016-abs')">abs</a>] [<a href="https://arxiv.org/abs/1612.07857">pdf</a>]
             <div id="arxiv-2016-abs" style="display:none"><p>
               Representation of human actions as a sequence of human body movements or action attributes enables the development of models for human activity recognition and summarization. We present an extension of the low-rank representation (LRR) model, termed the clustering-aware structure-constrained low-rank representation (CS-LRR) model, for unsupervised learning of human action attributes from video data. Our model is based on the union-of-subspaces (UoS) framework, and integrates spectral clustering into the LRR optimization problem for better subspace clustering results. We lay out an efficient linear alternating direction method to solve the CS-LRR optimization problem. We also introduce a hierarchical subspace clustering approach, termed hierarchical CS-LRR, to learn the attributes without the need for a priori specification of their number. By visualizing and labeling these action attributes, the hierarchical model can be used to semantically summarize long video sequences of human actions at multiple resolutions. A human action or activity can also be uniquely represented as a sequence of transitions from one action attribute to another, which can then be used for human action recognition. We demonstrate the effectiveness of the proposed model for semantic summarization and action recognition through comprehensive experiments on five real-world human action datasets. 
@@ -139,10 +151,10 @@
           <td>  
             <strong> Learning the nonlinear geometry of high-dimensional data: Models and algorithms </strong>
             <br> <b>T. Wu</b> and W. U. Bajwa
-            <br>  IEEE Trans. Signal Processing, vol. 63, no. 23, pp. 6229-6244, Dec. 2015.
-            <br> [<a href="javascript:none" onclick="display('TSP-abs')">abs</a>] [<a href="./pubs/tsp2015_MCUoS.pdf">pdf</a>] [<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7208866&filter%3DAND%28p_IS_Number%3A7307924%29">published version</a>] [<a href="https://bitbucket.org/SigProcessing/code_wb-tsp2015">code</a>]
+            <br> IEEE Trans. Signal Processing, vol. 63, no. 23, pp. 6229-6244, Dec. 2015.
+            <br> [<a href="javascript:none" onclick="display('TSP-abs')">abs</a>] [<a href="./pubs/tsp2015_MCUoS.pdf">pdf</a>] [<a href="https://ieeexplore.ieee.org/document/7208866/">published version</a>] [<a href="https://bitbucket.org/SigProcessing/code_wb-tsp2015">code</a>]
             <div id="TSP-abs" style="display:none"><p>
-              Modern information processing relies on the axiom that high-dimensional data lie near low-dimensional geometric structures. This paper revisits the problem of data-driven learning of these geometric structures and puts forth two new nonlinear geometric models for data describing “related” objects/phenomena. The first one of these models straddles the two extremes of the subspace model and the union-of-subspaces model, and is termed the metric-constrained union-of-subspaces (MC-UoS) model. The second one of these models-suited for data drawn from a mixture of nonlinear manifolds-generalizes the kernel subspace model, and is termed the metric-constrained kernel union-of-subspaces (MC-KUoS) model. The main contributions of this paper in this regard include the following. First, it motivates and formalizes the problems of MC-UoS and MC-KUoS learning. Second, it presents algorithms that efficiently learn an MC-UoS or an MC-KUoS underlying data of interest. Third, it extends these algorithms to the case when parts of the data are missing. Last, but not least, it reports the outcomes of a series of numerical experiments involving both synthetic and real data that demonstrate the superiority of the proposed geometric models and learning algorithms over existing approaches in the literature. These experiments also help clarify the connections between this work and the literature on (subspace and kernel k-means) clustering.
+              Modern information processing relies on the axiom that high-dimensional data lie near low-dimensional geometric structures. This paper revisits the problem of data-driven learning of these geometric structures and puts forth two new nonlinear geometric models for data describing "related" objects/phenomena. The first one of these models straddles the two extremes of the subspace model and the union-of-subspaces model, and is termed the metric-constrained union-of-subspaces (MC-UoS) model. The second one of these models-suited for data drawn from a mixture of nonlinear manifolds-generalizes the kernel subspace model, and is termed the metric-constrained kernel union-of-subspaces (MC-KUoS) model. The main contributions of this paper in this regard include the following. First, it motivates and formalizes the problems of MC-UoS and MC-KUoS learning. Second, it presents algorithms that efficiently learn an MC-UoS or an MC-KUoS underlying data of interest. Third, it extends these algorithms to the case when parts of the data are missing. Last, but not least, it reports the outcomes of a series of numerical experiments involving both synthetic and real data that demonstrate the superiority of the proposed geometric models and learning algorithms over existing approaches in the literature. These experiments also help clarify the connections between this work and the literature on (subspace and kernel k-means) clustering.
             </p></div>
           </td>
         </tr>
@@ -151,7 +163,7 @@
           <td>  
             <strong> Human action attribute learning using low-rank representations </strong>
             <br> <b>T. Wu</b>, P. Gurram, R. M. Rao and W. U. Bajwa
-            <br>  In Proc. Signal Processing with Adaptive Sparse Structured Representations workshop, Lisbon, Portugal, Jun. 5-8, 2017. (<b>SPARS 2017</b>)
+            <br> In Proc. Signal Processing with Adaptive Sparse Structured Representations workshop, Lisbon, Portugal, Jun. 5-8, 2017. (<b>SPARS 2017</b>)
             <br> [<a href="javascript:none" onclick="display('SPARS2017-abs')">abs</a>] [<a href="./pubs/spars2017_HCSLRR.pdf">pdf</a>]
             <div id="SPARS2017-abs" style="display:none"><p>
                 This paper studies the problem of learning human action attributes based on union-of-subspaces model. It puts forth an extension of the low-rank representation (LRR) model, termed the hierarchical clustering-aware structure-constrained low-rank representation (HCS-LRR) model, for unsupervised learning of human action attributes from video data. The effectiveness of the proposed model is demonstrated through experiments on five human action datasets for action recognition.
@@ -163,7 +175,7 @@
           <td>  
             <strong> Distributed learning of human mobility patterns from cellular network data </strong>
             <br> <b>T. Wu</b>, R. M. Rustamov and C. Goodall
-            <br>  In Proc. 51st Annu. Conf. on Information Sciences and Systems, Baltimore, MD, Mar. 22-24, 2017. (<b>CISS 2017</b>)
+            <br> In Proc. 51st Annu. Conf. on Information Sciences and Systems, Baltimore, MD, Mar. 22-24, 2017. (<b>CISS 2017</b>)
             <br> [<a href="javascript:none" onclick="display('CISS2017-abs')">abs</a>] [<a href="./pubs/ciss2017_cloudNNKSVD.pdf">pdf</a>]
             <div id="CISS2017-abs" style="display:none"><p>
               The advent of ubiquitous mobile devices has provided us with an abundant spatio-temporal data source that helps us understand human mobility. The big data generated from mobile devices can be distributed at different locations and it is always infeasible to aggregate the data from multiple data collection centers into one location due to communication and privacy considerations. This paper studies human mobility patterns by learning data-adaptive representations for cellular network data that are distributed across a set of interconnected nodes. It proposes a distributed algorithm, termed cloud NN-K-SVD, for collaboratively learning a sparsifying dictionary (i.e., overcomplete basis) from the data without exchanging data samples between different nodes. The effectiveness of cloud NN-K-SVD is demonstrated through experiments on anonymized Call Detail Records from Columbus, OH.
@@ -175,7 +187,7 @@
           <td>  
             <strong> Clustering-aware structure-constrained low-rank representation model for learning human action attributes </strong>
             <br> <b>T. Wu</b>, P. Gurram, R. M. Rao and W. U. Bajwa
-            <br>  In Proc. IEEE Image, Video, and Multidimensional Signal Processing Workshop, Bordeaux, France, Jul. 11-12, 2016. (<b>IVMSP 2016</b>) (<b>Best Student Paper Award</b>)
+            <br> In Proc. IEEE Image, Video, and Multidimensional Signal Processing Workshop, Bordeaux, France, Jul. 11-12, 2016. (<b>IVMSP 2016</b>) (<b>Best Student Paper Award</b>)
             <br> [<a href="javascript:none" onclick="display('IVMSP2016-abs')">abs</a>] [<a href="./pubs/ivmsp2016_CSLRR.pdf">pdf</a>]
             <div id="IVMSP2016-abs" style="display:none"><p>
                 This paper addresses the problem of learning meaningful human action attributes from high-dimensional video sequences based on union-of-subspaces (UoS) model. The model hypothesizes that each action attribute is represented by a subspace. It puts forth an extension of existing low-rank representation (LRR), termed the clustering-aware structure-constrained low-rank representation (CS-LRR) model, for unsupervised learning of human action attributes. The proposed CS-LRR model overcomes the shortcomings of existing techniques by its ability to handle disjoint subspaces, and by performing optimal spectral clustering of the subspaces. An efficient linear alternating direction method (LADM) is developed to solve the CS-LRR optimization problem. A human action or activity is represented as a sequence of transitions from one action attribute to another and can be uniquely represented by a subspace transition vector. These subspace transition vectors are used for human action recognition. The effectiveness of the proposed model is demonstrated through experiments on two real-world datasets for action recognition.
@@ -187,7 +199,7 @@
           <td>  
             <strong> Hierarchical union-of-subspaces model for human activity summarization </strong>
             <br> <b>T. Wu</b>, P. Gurram, R. M. Rao and W. U. Bajwa
-            <br>  Proc. IEEE Int. Conf. on Computer Vision Workshop, Santiago, Chile, 2015, pp. 1053-1061. (<b>ICCVW 2015</b>)
+            <br> In Proc. IEEE Int. Conf. on Computer Vision Workshop, Santiago, Chile, 2015, pp. 1053-1061. (<b>ICCVW 2015</b>)
             <br> [<a href="javascript:none" onclick="display('ICCVW2015-abs')">abs</a>] [<a href="./pubs/iccvw2015_HSSC.pdf">pdf</a>]
             <div id="ICCVW2015-abs" style="display:none"><p>
               A hierarchical union-of-subspaces model is proposed for performing semi-supervised human activity summarization in large streams of video data. The union of low-dimensional subspaces model is used to learn meaningful action attributes from a collection of high-dimensional video sequences of human activities. An approach called hierarchical sparse subspace clustering (HSSC) is developed to learn this model from the data in an unsupervised manner by capturing the variations or movements of each action in different subspaces, which allow the human actions to be represented as sequences of transitions from one subspace to another. These transition sequences can be used for human action recognition. The action attributes can also be represented at multiple resolutions using the subspaces at different levels of the hierarchical structure. By visualizing and labeling these action attributes, the hierarchical model can be used to semantically summarize long video sequences of human actions at different scales. The effectiveness of the proposed model is demonstrated through experiments on three real-world human action datasets for action recognition and semantic summarization of the actions using different resolutions of the action attributes.
@@ -199,7 +211,7 @@
           <td>  
             <strong> Active dictionary learning for image representation </strong>
             <br> <b>T. Wu</b>, A. D. Sarwate and W. U. Bajwa
-            <br>  In Proc. SPIE Unmanned Systems Technology XVII, vol. 9468, Baltimore, MD, Apr. 21-23, 2015. (<b>SPIE 2015</b>)
+            <br> In Proc. SPIE Unmanned Systems Technology XVII, vol. 9468, Baltimore, MD, Apr. 21-23, 2015. (<b>SPIE 2015</b>)
             <br> [<a href="javascript:none" onclick="display('SPIE2015-abs')">abs</a>] [<a href="./pubs/spie2015_activeDL.pdf">pdf</a>] 
             <div id="SPIE2015-abs" style="display:none"><p>
               Sparse representations of images in overcomplete bases (i.e., redundant dictionaries) have many applications in computer vision and image processing. Recent works have demonstrated improvements in image representations by learning a dictionary from training data instead of using a predefined one. But learning a sparsifying dictionary can be computationally expensive in the case of a massive training set. This paper proposes a new approach, termed active screening, to overcome this challenge. Active screening sequentially selects subsets of training samples using a simple heuristic and adds the selected samples to a "learning pool," which is then used to learn a newer dictionary for improved representation performance. The performance of the proposed active dictionary learning approach is evaluated through numerical experiments on real-world image data; the results of these experiments demonstrate the effectiveness of the proposed method.
@@ -211,7 +223,7 @@
           <td>  
             <strong> Metric-constrained kernel union of subspaces </strong>
             <br> <b>T. Wu</b> and W. U. Bajwa
-            <br>  In Proc. IEEE Int. Conf. on Acoustics, Speech, and Signal Processing, Brisbane, Australia, Apr. 19-24, 2015, pp. 5778-5782. (<b>ICASSP 2015</b>)
+            <br> In Proc. IEEE Int. Conf. on Acoustics, Speech, and Signal Processing, Brisbane, Australia, Apr. 19-24, 2015, pp. 5778-5782. (<b>ICASSP 2015</b>)
             <br> [<a href="javascript:none" onclick="display('ICASSP2015-abs')">abs</a>] [<a href="./pubs/icassp2015_MCKUoS.pdf">pdf</a>]
             <div id="ICASSP2015-abs" style="display:none"><p>
               This paper addresses the problem of learning a collection of nonlinear manifolds. Inspired by kernel methods, it puts forth a generalization of the kernel subspace model, termed the Metric-Constrained Kernel Union-of-Subspaces (MC-KUoS) model. It then develops an iterative method for learning of an MC-KUoS whose solution is based on the data representation capability of the manifolds and distances between subspaces in the kernel (feature) space. The proposed method (when using Gaussian and polynomial kernels) outperforms existing competitive state-of-the-art methods for real-world image denoising, which shows the benefits of the MC-KUoS model and the proposed denoising approach.
@@ -267,7 +279,6 @@
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-57014740-1', 'auto');
       ga('send', 'pageview');
     </script>
