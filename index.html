@@ -60,7 +60,7 @@
            <ul class="nav navbar-nav navbar-right">
             <li><a href="https://github.com/twugithub"><i class="fa fa-github fa-1x"></i></a></li>
             <li><a href="https://www.linkedin.com/in/tong-wu-42221532/"><i class="fa fa-linkedin fa-1x"></i></a></li>
-            <!-- <li><a href="https://scholar.google.com/citations?user=pz3nnhoAAAAJ&hl=en"><i class="ai ai-google-scholar-square"></i></a></li> -->
+            <li><a href="https://scholar.google.com/citations?user=pz3nnhoAAAAJ&hl=en"><i class="ai ai-google-scholar-square"></i></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -86,7 +86,7 @@
 
       <!-- <div class="container"> -->
       <span id="bio" name="bio"><h3> Bio </h3></span>
-      <table class="table table-hover">
+        <table class="table table-hover">
         <p>
 		I am a Machine Learning Engineer at <a href="https://www.factset.com/">Factset</a>. Before joining Factset, I completed my Ph.D. in Electrical and Computer Engineering from <a href="http://www.ece.rutgers.edu/">Rutgers University</a>, where I was fortunate to work with <a href="http://www.inspirelab.us/people/">Prof. Waheed Bajwa</a>. I obtained my M.S. degree in Electrical Engineering from <a href="http://ece.duke.edu/">Duke University</a> in 2011, and B.E. degree in Instrument Science and Engineering from <a href="http://www.ie.sjtu.edu.cn/">Shanghai Jiao Tong University</a> in 2009. In the past, I held internships at AT&T Research Lab, and conducted visiting research at Army Research Lab. My research interests include machine learning, geometrical methods for big data analytics, and computer vision.
         </p>
@@ -121,28 +121,30 @@
         </tr>
       </table>
             
-      <span id="publication" name="publication"><h3> Conference and journal publications </h3></span>
+      <span id="publication" name="publication"><h3> Publications </h3></span>
       <table class="table table-hover">
+        <h4> Journal Papers </h4>
+          
+        <tr>
+          <td>  
+            <strong> Graph regularized low-rank representation for submodule clustering </strong>
+            <br> <b>T. Wu</b>
+            <br> Pattern Recognition, vol. 100, 107145, Apr. 2020.
+            <br> [<a href="javascript:none" onclick="display('SPL-abs')">abs</a>] [<a href="https://www.sciencedirect.com/science/article/pii/S0031320319304467" class="textlink" target="_blank">pdf</a>]
+            <div id="SPL-abs" style="display:none"><p>
+              In this paper, a new submodule clustering method for imaging (2-D) data is proposed. Unlike most existing clustering methods that first convert such data into vectors as preprocessing, the proposed method arranges the data samples as lateral slices of a third-order tensor. Our algorithm is based on the union-of-free-submodules model and the samples are represented using t-product in the third-order tensor space. First, we impose a low-rank constraint on the representation tensor to capture the principle information of data. By incorporating manifold regularization into the tensor factorization, the proposed method explicitly exploits the local manifold structure of data. Meanwhile, a segmentation dependent term is employed to integrate the two pipeline steps of affinity learning and spectral clustering into a unified optimization framework. The proposed method can be efficiently solved based on the alternating direction method of multipliers and spectral clustering. Finally, a nonlinear extension is proposed to handle data drawn from a mixture of nonlinear manifolds. Extensive experimental results on five real-world image datasets confirm the effectiveness of the proposed methods. 
+            </p></div>
+          </td>
+        </tr>
+          
 	    <tr>
           <td>  
             <strong> A low tensor-rank representation approach for clustering of imaging data </strong>
             <br> <b>T. Wu</b> and W. U. Bajwa
             <br> IEEE Signal Processing Letters, vol. 25, no. 8, pp. 1196-1200, Aug. 2018.
-            <br> [<a href="javascript:none" onclick="display('SPL-abs')">abs</a>] [<a href="https://ieeexplore.ieee.org/document/8392416/" class="textlink" target="_blank">published version</a>]
+            <br> [<a href="javascript:none" onclick="display('SPL-abs')">abs</a>] [<a href="https://ieeexplore.ieee.org/document/8392416/" class="textlink" target="_blank">pdf</a>]
             <div id="SPL-abs" style="display:none"><p>
               This letter proposes an algorithm for clustering of two-dimensional data. Instead of "flattening" data into vectors, the proposed algorithm keeps samples as matrices and stores them as lateral slices in a third-order tensor. It is then assumed that the samples lie near a union of free submodules and their representations under this model are obtained by imposing a low tensor-rank constraint and a structural constraint on the representation tensor. Clustering is carried out using an affinity matrix calculated from the representation tensor. Effectiveness of the proposed algorithm and its superiority over existing methods are demonstrated through experiments on two image datasets. 
-            </p></div>
-          </td>
-        </tr>
-		
-        <tr>
-          <td>  
-            <strong> Human action attribute learning from video data using low-rank representations </strong>
-            <br> <b>T. Wu</b>, P. Gurram, R. M. Rao and W. U. Bajwa
-            <br> arXiv preprint, Nov. 2016.
-            <br> [<a href="javascript:none" onclick="display('arxiv-2016-abs')">abs</a>] [<a href="https://arxiv.org/abs/1612.07857" class="textlink" target="_blank">pdf</a>]
-            <div id="arxiv-2016-abs" style="display:none"><p>
-              Representation of human actions as a sequence of human body movements or action attributes enables the development of models for human activity recognition and summarization. We present an extension of the low-rank representation (LRR) model, termed the clustering-aware structure-constrained low-rank representation (CS-LRR) model, for unsupervised learning of human action attributes from video data. Our model is based on the union-of-subspaces (UoS) framework, and integrates spectral clustering into the LRR optimization problem for better subspace clustering results. We lay out an efficient linear alternating direction method to solve the CS-LRR optimization problem. We also introduce a hierarchical subspace clustering approach, termed hierarchical CS-LRR, to learn the attributes without the need for a priori specification of their number. By visualizing and labeling these action attributes, the hierarchical model can be used to semantically summarize long video sequences of human actions at multiple resolutions. A human action or activity can also be uniquely represented as a sequence of transitions from one action attribute to another, which can then be used for human action recognition. We demonstrate the effectiveness of the proposed model for semantic summarization and action recognition through comprehensive experiments on five real-world human action datasets. 
             </p></div>
           </td>
         </tr>
@@ -158,6 +160,12 @@
             </p></div>
           </td>
         </tr>
+    
+      </table>
+        
+        
+      <table class="table table-hover">
+      <h4> Conference Papers </h4>
 		
 		<tr>
           <td>  
@@ -266,6 +274,23 @@
             </p></div>
           </td>
         </tr>
+      </table>
+        
+      <table class="table table-hover">
+      <h4> Preprints </h4>
+          
+        <tr>
+          <td>  
+            <strong> Human action attribute learning from video data using low-rank representations </strong>
+            <br> <b>T. Wu</b>, P. Gurram, R. M. Rao and W. U. Bajwa
+            <br> arXiv preprint, Nov. 2016.
+            <br> [<a href="javascript:none" onclick="display('arxiv-2016-abs')">abs</a>] [<a href="https://arxiv.org/abs/1612.07857" class="textlink" target="_blank">pdf</a>]
+            <div id="arxiv-2016-abs" style="display:none"><p>
+              Representation of human actions as a sequence of human body movements or action attributes enables the development of models for human activity recognition and summarization. We present an extension of the low-rank representation (LRR) model, termed the clustering-aware structure-constrained low-rank representation (CS-LRR) model, for unsupervised learning of human action attributes from video data. Our model is based on the union-of-subspaces (UoS) framework, and integrates spectral clustering into the LRR optimization problem for better subspace clustering results. We lay out an efficient linear alternating direction method to solve the CS-LRR optimization problem. We also introduce a hierarchical subspace clustering approach, termed hierarchical CS-LRR, to learn the attributes without the need for a priori specification of their number. By visualizing and labeling these action attributes, the hierarchical model can be used to semantically summarize long video sequences of human actions at multiple resolutions. A human action or activity can also be uniquely represented as a sequence of transitions from one action attribute to another, which can then be used for human action recognition. We demonstrate the effectiveness of the proposed model for semantic summarization and action recognition through comprehensive experiments on five real-world human action datasets. 
+            </p></div>
+          </td>
+        </tr>
+          
       </table>
 
 
